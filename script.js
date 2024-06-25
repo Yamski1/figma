@@ -28,3 +28,37 @@ const filterCards = e => {
 // Add click event listener to each filter btn
 
 filterButtons.forEach(Button => Button.addEventListener("click", filterCards));
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            // Remove active class from all links
+            navLinks.forEach(link => link.classList.remove("active"));
+            // Add active class to the clicked link
+            this.classList.add("active");
+        });
+    });
+});
+
+
+
+// modal
+
+
+
+// popup
+
+document.getElementById("button").addEventListener("click", function(){
+    document.querySelector(".modal").style.display = "flex";
+})
+
+document.querySelector(".close").addEventListener("click", function(){
+    document.querySelector(".modal").style.display = "none";
+})
+
+document.querySelector(".submit-button").addEventListener("click", function(){
+    document.querySelector(".modal").style.display = "none";
+})

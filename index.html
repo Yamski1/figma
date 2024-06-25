@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+<script src="script.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -24,9 +24,9 @@
                 <div class="top">
                 <a href="#"><h4><span>WEB</span>STUDIO</h4></a>
 
-                <nav>
+                <nav class="nav-links">
                     <ul>
-                        <li><a href="#">Studio</a></li>
+                        <li><a href="index.html" class="active">Studio</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="#">Contacts</a></li>    
                     </ul>
@@ -45,8 +45,10 @@
         <section class="second">
             <div class="container">
             <h1>Effective Solutions<br> for Your Business</h1>
-            <button>Order Service</button>
+            <button id="button" class="button">Order Service</button>
             </div>
+            
+
             
         </section>
 
@@ -191,7 +193,52 @@
                 </div>
             </div>
         </section>
-
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close">&times;</button>
+                </div>
+                <div class="container-pop">
+                <div class="modal-title">
+                    Leave your contacts and we will call you back
+                </div>
+                
+                    <div class="input-wrapper">
+                        <label for="name-input">Name</label>
+                        <div class="input-container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name-input" placeholder="Enter your name...">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email-input">Phone</label>
+                        <div class="input-container">
+                            <i class="fas fa-phone"></i>
+                            <input type="email" id="email-input" placeholder="Enter your email...">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone-input">Email</label>
+                        <div class="input-container">
+                            
+                            <i class="fas fa-envelope"></i>
+                            <input type="tel" id="phone-input" placeholder="Enter your phone number...">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message-input">Comment</label>
+                        <div class="input-container">
+                            <textarea id="message-input" placeholder="Text input"></textarea>
+                        </div>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="terms-checkbox">
+                        <label for="terms-checkbox">I accept the terms and conditions of the <a href="#">Privacy Policy </a></label>
+                    </div>
+                    <button type="submit" class="submit-button">Send</button>
+                </div>
+            </div>
+        </div>
 </body>
 <footer>
     <div class="footer-bg">

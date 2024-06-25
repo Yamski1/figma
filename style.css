@@ -29,7 +29,7 @@ span {
 header {
     display: flex;
     align-items: center;
-    padding: 30px 10%;
+    padding: 25px 10%;
 }
 
 header > * {
@@ -462,3 +462,199 @@ footer{
     width: 168px;
     height: 88px;
 }
+
+nav a{
+    position: relative;
+}
+nav a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -25px; /* Align it to the bottom of the nav a */
+    left: 0;
+    width: 100%;
+    height: 4px; /* Customize the height as needed */
+    background: rgba(64, 75, 191, 1); /* Customize the color as needed */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+nav a:hover::after,
+nav a.active::after {
+    opacity: 1; /* Scale to full width on hover */
+}
+
+/* modals */
+
+
+.modal{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content{
+    background: #fff;
+    width: 408px;
+    height: 584px;
+    padding: 20px;
+    position: relative;
+    border-radius: 4px;
+    
+}
+.modal-header{
+    display: flex;
+    justify-content: end;
+    padding: 6px 10px;
+}
+.modal-header .close{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: solid 1px rgba(231, 233, 252, 1);
+    cursor: pointer;
+    outline: none;
+}
+.modal-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Robot', sans-serif;
+}
+
+/* input */
+
+/* Styles for form container */
+
+.container-pop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ } /* Full viewport height 
+}
+
+/* Styles for form inputs and elements */
+
+.input-wrapper {
+    width: 100%; /* Full width */
+    max-width: 300px; /* Adjust maximum width as needed */
+    margin-bottom: 15px; /* Space between inputs */
+    text-align: left; /* Align text to the left */
+    position: relative; /* Ensure relative positioning for icon alignment */
+}
+
+.input-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgba(142, 143, 153, 1);
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-container {
+    position: relative;
+    width: 300px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px; /* Adjust icon left position */
+    top: 50%; /* Center icon vertically */
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: color 0.3s; /* Smooth transition for color change */
+    pointer-events: none; /* Ensure icon does not interfere with input focus */
+}
+
+.input-container input,
+.input-container textarea {
+    width: calc(100% - 20px); /* Adjust input width to accommodate icon */
+    padding: 10px 10px 10px 30px; /* Adjust padding for both inputs and textareas */
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Default border */
+    border-radius: 4px; /* Optional: add rounded corners */
+}
+
+.input-container textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    min-height: 100px; /* Minimum height of the textarea */
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border: 1px solid rgba(77, 90, 229, 1); /* Change border style when focused */
+    outline: none; /* Remove default outline */
+}
+
+.input-container:focus-within i {
+    color: rgba(77, 90, 229, 1); /* Change icon color when input is focused */
+}
+
+.checkbox-wrapper {
+    display: flex;
+    margin-top: 15px; /* Space between inputs and checkbox */
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+.checkbox-wrapper label {
+    font-size: 14px; /* Adjust font size of the terms and conditions text */
+    color: #666; /* Adjust color of the terms and conditions text */
+}
+
+.checkbox-wrapper label a {
+    color: #007BFF; /* Adjust link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.checkbox-wrapper label a:hover {
+    text-decoration: underline; /* Add underline on hover for link */
+}
+
+/* Styles for submit button */
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgba(77, 90, 229, 1); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    height: 56px;
+    width: 169px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Button text size */
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Space between button and checkbox */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Easy modification */
+/*
+   To modify the submit button, you can adjust properties like:
+   - background-color
+   - color
+   - padding
+   - font-size
+   - border-radius
+   - etc.
+*/
+
+/* script */
