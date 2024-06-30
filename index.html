@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -23,7 +24,8 @@
             <header>
                 <div class="top">
                 <a href="#"><h4><span>WEB</span>STUDIO</h4></a>
-
+                
+                
                 <nav class="nav-links">
                     <ul>
                         <li><a href="index.html" class="active">Studio</a></li>
@@ -32,11 +34,13 @@
                     </ul>
                 </nav>
                 </div>
-
-                <div class="top">
+                <div class="menu-nav"><button id="button1" class="button1"><i class="fas fa-bars"></i></button> 
+                </div> 
+                <div class="top-right">
                 <p>info@devstudio.com</p>
                 <p>+11 (000) 111-11-11</p>
                 </div>
+                
             </header>
         </section>
 
@@ -207,14 +211,14 @@
                         <label for="name-input">Name</label>
                         <div class="input-container">
                             <i class="fas fa-user"></i>
-                            <input type="text" id="name-input" placeholder="Enter your name...">
+                            <input type="text" id="name-input" placeholder=" ">
                         </div>
                     </div>
                     <div class="input-wrapper">
                         <label for="email-input">Phone</label>
                         <div class="input-container">
                             <i class="fas fa-phone"></i>
-                            <input type="email" id="email-input" placeholder="Enter your email...">
+                            <input type="tel" id="email-input" placeholder=" ">
                         </div>
                     </div>
                     <div class="input-wrapper">
@@ -222,7 +226,7 @@
                         <div class="input-container">
                             
                             <i class="fas fa-envelope"></i>
-                            <input type="tel" id="phone-input" placeholder="Enter your phone number...">
+                            <input type="email" id="phone-input" placeholder=" ">
                         </div>
                     </div>
                     <div class="input-wrapper">
@@ -254,6 +258,49 @@
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-linkedin-in"></i>
                 </div>
+        </div>
+        
+        <div class="footer-input-container">
+            <label for="footer-input" class="footer-input-label">Subscribe</label>
+            <div class="footer-input-wrapper">
+                <input type="text" id="footer-input" placeholder="E-mail" class="footer-input">
+                <button class="footer-send-button">Subscribe<i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="modal1" id="modal1">
+        <div class="modal-content1">
+            <div class="modal-header1">
+                <button class="close1">&times;</button>
+            </div>
+            <div class="container-pop1">
+            <div class="modal-title1">
+                <div class="sidebar">
+                    <div class="sidebar1">
+
+                    <ul >
+                        <li><a href="index.html" class="active">Studio</a></li>
+                            <li><a href="porfolio.html">Portfolio</a></li>
+                            <li><a href="#">Contacts</a></li>
+                    </ul>
+
+                    </div>
+                    <div class="cntct">
+                        <p class="num">+11 (000) 111-11-11</p>
+                        <p class="mail">info@devstudio.com</p>
+                        
+                    </div>
+                    <div class="icnmob">
+                        <div class="icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 </footer>

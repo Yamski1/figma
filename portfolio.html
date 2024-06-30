@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -32,8 +32,10 @@
                     </ul>
                 </nav>
                 </div>
+                <div class="menu-nav"><button id="button1" class="button1"><i class="fas fa-bars"></i></button> 
+                </div> 
 
-                <div class="top">
+                <div class="top-right">
                 <p>info@devstudio.com</p>
                 <p>+11 (000) 111-11-11</p>
                 </div>
@@ -138,8 +140,50 @@
                 <i class="fa-brands fa-linkedin-in"></i>
                 </div>
         </div>
+        <div class="footer-input-container">
+            <label for="footer-input" class="footer-input-label">Subscribe</label>
+            <div class="footer-input-wrapper">
+                <input type="text" id="footer-input" placeholder="E-mail" class="footer-input">
+                <button class="footer-send-button">Subscribe<i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="modal1" id="modal1">
+        <div class="modal-content1">
+            <div class="modal-header1">
+                <button class="close1">&times;</button>
+            </div>
+            <div class="container-pop1">
+            <div class="modal-title1">
+                <div class="sidebar">
+                    <div class="sidebar1">
+
+                    <ul >
+                        <li><a href="index.html" class="active">Studio</a></li>
+                            <li><a href="porfolio.html">Portfolio</a></li>
+                            <li><a href="#">Contacts</a></li>
+                    </ul>
+
+                    </div>
+                    <div class="cntct">
+                        <p class="num">+11 (000) 111-11-11</p>
+                        <p class="mail">info@devstudio.com</p>
+                        
+                    </div>
+                    <div class="icnmob">
+                        <div class="icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 </footer>
-<script src="script.js"></script>
+
 
 </html>

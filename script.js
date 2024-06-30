@@ -62,3 +62,16 @@ document.querySelector(".close").addEventListener("click", function(){
 document.querySelector(".submit-button").addEventListener("click", function(){
     document.querySelector(".modal").style.display = "none";
 })
+
+// secon modal
+
+document.getElementById("button1").addEventListener("click", function(){
+    document.querySelector(".modal1").style.display = "flex";
+})
+
+document.querySelector(".close1").addEventListener("click", function(){
+    document.querySelector(".modal1").style.display = "none";
+})
+
+
+
