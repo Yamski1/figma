@@ -75,3 +75,8 @@ document.querySelector(".close1").addEventListener("click", function(){
 
 
 
+
+
+
+// asdasdasd
+
