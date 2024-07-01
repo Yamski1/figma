@@ -980,17 +980,35 @@ nav a.active::after {
         display: flex;
         flex-direction: column;
     }
+    .footer-bg{
+        justify-content: center;
+    }
     .footer-input-container{
+        max-width: 100%;
         display: flex;
         text-align: center;
     }
     .footer-input-wrapper button{
-        max-width: 165px;
+        max-width: 100%;
         margin-top: 20px;
         margin-left: 25%;
     }
     .our-team{
         margin: 0;
+    }
+    footer .icons{
+        justify-content: space-between;
+    }
+    footer input{
+        min-width: 310px;
+        max-width: 400px;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    footer{
+        margin: 0;
+        padding: 30px;
     }
     
     footer h4{
