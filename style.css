@@ -415,6 +415,7 @@ footer{
     cursor: pointer;
     
 }
+.filter-buttons button:hover,
 .filter-buttons button.active{
     background: rgba(64, 75, 191, 1);
     color: #fff;
@@ -770,6 +771,61 @@ nav a.active::after {
     justify-content: space-around;
  }
 
+ /* new footer */
+
+.footer-input-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 0px 0;
+    
+    background-color: #2e2f42; /* Adjust background color if necessary */
+}
+
+.footer-input-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff; /* Adjust text color if necessary */
+}
+
+.footer-input-wrapper {
+    display: flex;
+    width: 70%;
+}
+
+.footer-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 16px;
+    background-color: #2e2f42;
+    color: #fff;
+}
+
+.footer-send-button {
+    margin-left: 60px;
+    padding: 10px 20px;
+    background-color: rgba(77, 90, 229, 1);
+    color: #fff;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: inline-flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-send-button:hover {
+    background-color: #0056b3;
+}
+
+
 @media (max-width: 900px){
     .top-right{
         display: block;
@@ -972,57 +1028,47 @@ nav a.active::after {
     }
     
 }
-/* new footer */
 
-.footer-input-container {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    padding: 0px 0;
-    
-    background-color: #2e2f42; /* Adjust background color if necessary */
+/* Existing CSS code */
+
+/* Container for positioning */
+.filterable-cards .card {
+    position: relative;
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
-.footer-input-label {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #fff; /* Adjust text color if necessary */
+/* Container for the image and hover text */
+.filterable-cards .card .image-container {
+    position: relative;
 }
 
-.footer-input-wrapper {
-    display: flex;
-    width: 70%;
-}
-
-.footer-input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #fff;
-    border-radius: 4px 4px 4px 4px;
-    font-size: 16px;
-    background-color: #2e2f42;
-    color: #fff;
-}
-
-.footer-send-button {
-    margin-left: 10px;
-    padding: 10px 20px;
-    background-color: rgba(77, 90, 229, 1);
-    color: #fff;
-    border: none;
-    border-radius: 4px 4px 4px 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+/* Text overlay, hidden by default */
+.filterable-cards .card .hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    display: inline-flex;
-    gap: 10px;
-    text-align: center;
+    height: 100%;
+    display: flex;
     justify-content: center;
+    /* align-items: center; */
+    color: rgba(244, 244, 253, 1); /* Text color */
+    background-color: rgba(77, 90, 229, 1); /* Background color */
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    padding: 40px 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
 }
 
-.footer-send-button:hover {
-    background-color: #0056b3;
+/* Show the text on hover */
+.filterable-cards .card .image-container img:hover + .hover-text {
+    transform: translateY(0);
+    opacity: 1;
 }
 
+/* Rest of the existing CSS code */
