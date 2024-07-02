@@ -23,6 +23,16 @@ const filterCards = e => {
     })
     
 };
+// secon modal
+
+document.getElementById("button1").addEventListener("click", function(){
+    document.querySelector(".modal1").style.display = "flex";
+})
+
+document.querySelector(".close1").addEventListener("click", function(){
+    document.querySelector(".modal1").style.display = "none";
+})
+
 
 
 // Add click event listener to each filter btn

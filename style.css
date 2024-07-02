@@ -30,7 +30,7 @@ span {
 header {
     display: flex;
     align-items: center;
-    padding: 25px 10%;
+     padding: 25px 10px 25px 10%; /*from 25px 10% -- 02/07 */
     height: 72px;
 }
 
@@ -41,7 +41,11 @@ header > * {
     justify-content: center;
 }
 nav ul{
+    /* 02-07-24 */
+    display: inline-flex;
+    /*  */
     padding-left: 40px;
+    
 }
 nav ul li{
     display: inline-block;
@@ -52,7 +56,10 @@ nav ul li{
 .top p {
     padding-left: 90px;
     align-items: center;
+    
 }
+
+
 
 /* section{
     border: 10px solid gray;
@@ -121,14 +128,28 @@ h1{
 
 /* third */
 
-
-.container2 {
+.third{
     display: flex;
-   
-    margin: auto;
-    max-width:1128px;
+    align-items: center;
+    
+    justify-content: center;
+}
+.container2 {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    justify-content: space-around;
+    
+    padding: 10%; */
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    margin: 0;
+    width: 100%;
+    /* max-width:1128px; */
     gap: 50px;
-    padding-top: 120px;
+    padding: 120px;
+    
     
     
 }
@@ -150,6 +171,7 @@ h3 {
     width: 264px;
     height: 72px;
     line-height: 24px;
+    text-align: left;
 }
 
 /* fourth */
@@ -825,8 +847,8 @@ nav a.active::after {
     background-color: #0056b3;
 }
 
-
-@media (max-width: 900px){
+/* from max-width900px 02-07-24 */
+@media (max-width: 1200px){
     .top-right{
         display: block;
         text-align: right;
@@ -850,7 +872,7 @@ nav a.active::after {
     .container2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 100px 20px 0px 20px;
+        padding: 100px 10% 0px 10%;
         column-gap: 10px;
         justify-content: center;
     }
@@ -912,11 +934,34 @@ nav a.active::after {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 720px; /* 2 * 360px */
     }
+        /* 02-07-24 */
+    .our-team{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        
+    }
+    .company-icons{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+/* 02-07-24 added size*/
+@media (max-width:730px){
+    .our-team{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .company-icons{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .button1{
     display: none;
 }
-@media (max-width: 450px){
+/* form max-width450px */
+@media (max-width: 740px){
     header{
         display: flex;
         justify-content: space-around;
@@ -979,6 +1024,9 @@ nav a.active::after {
     .footer-input-wrapper{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        
+        
     }
     .footer-bg{
         justify-content: center;
@@ -989,7 +1037,8 @@ nav a.active::after {
         text-align: center;
     }
     .footer-input-wrapper button{
-        max-width: 100%;
+        
+        max-width: 50%;
         margin-top: 20px;
         margin-left: 25%;
     }
@@ -1072,7 +1121,28 @@ nav a.active::after {
         display: flex;
         flex-wrap: wrap;
     }
+    .container2 p{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .footer-input-container{
+        width: 100%;
+    }
+    .footer-input-wrapper{
+        width: 100%;
+    }
 }
+
+@media (max-height:700px){
+    .cntct{
+        padding-top: 40%;
+    }
+}
+
+
+
+
 
 /* Existing CSS code */
 
