@@ -849,7 +849,7 @@ nav a.active::after {
     }
     .container2{
         display: grid;
-        grid-template-columns: repeat(2, 356px);
+        grid-template-columns: repeat(2, 1fr);
         padding: 100px 20px 0px 20px;
         column-gap: 10px;
         justify-content: center;
@@ -1000,7 +1000,7 @@ nav a.active::after {
         justify-content: space-between;
     }
     footer input{
-        min-width: 310px;
+        min-width: 320px;
         max-width: 400px;
         width: 100%;
         justify-content: center;
@@ -1045,6 +1045,33 @@ nav a.active::after {
         padding-top: 30dvh;
     }
     
+}
+@media (max-width:360px){
+    .container2 {
+        height: 100%;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        
+    }
+    
+    .our-team{
+        width: 100%;
+    }
+    .third_box{
+        width: 100%;
+    }
+    .footer-input{
+        min-width: 0px;
+    }
+    .company-icons{
+        width: 100%;
+        padding: 0px 0px 10% 0px;
+    }
+    .container-footer2 .icons{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /* Existing CSS code */
