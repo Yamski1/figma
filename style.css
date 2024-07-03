@@ -967,6 +967,10 @@ nav a.active::after {
         display: flex;
         justify-content: space-around;
     }
+    .top{
+        justify-content: flex-start;
+        padding: 20px;
+    }
     
     nav, .top-right{
         display: none;
