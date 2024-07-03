@@ -1105,11 +1105,14 @@ nav a.active::after {
         justify-content: flex-start;
     }
     .company-icons{
+         padding-left:0px;/* 03-07 */
+        padding-right: 0px;
         padding-bottom: 40%;
     }
     
 }
-@media (max-width:360px){
+
+@media (max-width:364px){
     .container2 {
         height: 100%;
         width: 100%;
@@ -1145,6 +1148,10 @@ nav a.active::after {
     }
     .footer-input-wrapper{
         width: 100%;
+    }
+    .company-icons{
+        /* display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); */
     }
 }
 
