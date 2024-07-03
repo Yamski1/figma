@@ -969,7 +969,7 @@ nav a.active::after {
     }
     .top{
         justify-content: flex-start;
-        padding: 20px;
+       
     }
     
     nav, .top-right{
