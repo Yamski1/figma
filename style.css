@@ -70,7 +70,8 @@ nav ul li{
 
 .second {
     position: relative;
-    background-image: url('https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g5LeeO9ruYqniF9fdLaIxhQ~2ZpbZwX1WlExIzWnAYgMFhWp96Zwmjcqpa3CPBnA8YboalVKhpaJnMEsz3nb~BqiXUoZOnJdQmiPSa1lfK0lHIt2B1mN2xOLEwTKEv1Z8tYCIPTnJ-~H1Q2EeFz15Gn0XlF6VhNjsWM70Oq~W83PigSTXXZXFUZ48j64dwBr2kte0bRJjklPYiDtbBmFfxyqXmBcG2JIdYVPWYHeVu0IeZeuB4nw3touArsTxDQpZksbLVseXB-F8OMQfLi0R74650VcQob~lo2Ygu37-iZ30uOOaoNe-NZrRTYXMJKkD19e1uWJEStboo27Rv38NQ__');
+    /* background-image: url('https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g5LeeO9ruYqniF9fdLaIxhQ~2ZpbZwX1WlExIzWnAYgMFhWp96Zwmjcqpa3CPBnA8YboalVKhpaJnMEsz3nb~BqiXUoZOnJdQmiPSa1lfK0lHIt2B1mN2xOLEwTKEv1Z8tYCIPTnJ-~H1Q2EeFz15Gn0XlF6VhNjsWM70Oq~W83PigSTXXZXFUZ48j64dwBr2kte0bRJjklPYiDtbBmFfxyqXmBcG2JIdYVPWYHeVu0IeZeuB4nw3touArsTxDQpZksbLVseXB-F8OMQfLi0R74650VcQob~lo2Ygu37-iZ30uOOaoNe-NZrRTYXMJKkD19e1uWJEStboo27Rv38NQ__'); */
+    background-image: url('group-people.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
