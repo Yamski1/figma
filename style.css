@@ -1100,6 +1100,9 @@ nav a.active::after {
     .filter-buttons{
         justify-content: flex-start;
     }
+    .company-icons{
+        padding-bottom: 40%;
+    }
     
 }
 @media (max-width:360px){
@@ -1122,7 +1125,7 @@ nav a.active::after {
     }
     .company-icons{
         width: 100%;
-        padding: 0px 0px 10% 0px;
+        padding: 0px 0px 40% 0px;
     }
     .container-footer2 .icons{
         display: flex;
